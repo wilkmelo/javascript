@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabuada</title>
+    <title>Super Contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Tabuada</h1>
-    <section id="entrada">
-            <form action="#" method="get">
-                <div>
-                    <p>
-                        <label for="num">Número:</label>
-                        <input type="number" name="num" id="fnum" placeholder=" Digite o número">
-                        <input type="submit" value="Gerar tabuada" formaction="javascript:tabuada()">
-                    </p>
-                </div>
-            </form>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <p>Início: <input type="number" name="ini" id="txti"></p>
+            <p>Fim: <input type="number" name="fim" id="txtf"></p>
+            <p>Passo: <input type="number" name="passo" id="txtp"></p>
+            <p><input type="button" value="Contar" onclick="contar()"></p>
+        </div>
+        <div id="res">
+            Preparando a contagem...
+        </div>
     </section>
-    
     <footer>
         <p>&copy; Wayks</p>
     </footer>

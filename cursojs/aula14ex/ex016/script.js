@@ -1,10 +1,18 @@
-function tabuada() {
-    let entrada = document.getElementById('entrada')
-    let n = Number(document.getElementById('fnum').value)
-    let c = 1
-    while (c <= 10) {
-        entrada.innerHTML += `${n} x ${c} = <strong>${n * c}</strong><br>`
-        c ++
-    }
-}
+function conta(){
+let ini = document.getElementById('txti')
+let fim = document.getElementById('txtf')
+let passo = document.getElementById('txtp')
+let res = document.getElementById('res')
 
+if (ini.value.length == 0 || fim.value.length == 0 || passo.valeu.length == 0) {
+    window.alert('[ERRO] faltam dados!')
+} else {
+    res.innerHTML = 'Contando:'
+    let i = Number(ini.value)
+    let f = Number(fim.value)
+    let p =Number(passo.value)
+
+    for(let c = i; c <= f; c += p ) 
+        res.innerHTML += `${c} \u{1F603}`
+}
+}
